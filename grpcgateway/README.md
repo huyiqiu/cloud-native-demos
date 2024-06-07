@@ -78,6 +78,9 @@ $ curl localhost:8080/v1/greeter/sayhello?name=world
 
 ## reference
 [1] https://stackoverflow.com/questions/70586511/protoc-gen-go-unable-to-determine-go-import-path-for-simple-proto
+
 [2] https://stackoverflow.com/questions/66168350/import-google-api-annotations-proto-was-not-found-or-had-errors-how-do-i-add
+
 [3] https://stackoverflow.com/questions/71733519/golang-google-protobuf-empty-proto-file-not-found
+
 [4] https://www.lixueduan.com/posts/grpc/07-grpc-gateway/
