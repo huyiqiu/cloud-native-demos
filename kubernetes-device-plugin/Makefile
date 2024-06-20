@@ -1,6 +1,6 @@
 NAME=coffee-device-plugin
 VERSION=v0.0.1
-REPO=quay.io/huyiqiu1998
+REPO=your-repo
 K8S_YAML=coffee-ds.yaml
 
 # Docker 镜像名称
@@ -11,7 +11,7 @@ GO_SRC = main.go
 
 BINARY = $(NAME)
 
-GO_FLAGS = "-a -installsuffix cgo"
+GO_FLAGS = -a -installsuffix cgo
 
 .PHONY: all build clean docker-build docker-push deploy
 

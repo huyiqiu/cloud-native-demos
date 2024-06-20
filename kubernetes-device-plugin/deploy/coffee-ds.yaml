@@ -15,14 +15,20 @@ spec:
     spec:
       containers:
       - name: coffee-device-plugin
-        image: quay.io/huyiqiu1998/coffee-device-plugin:v0.0.1
+        image: coffee-device-plugin:v0.0.1
+        imagePullPolicy: Always
         volumeMounts:
         - name: device-plugin
           mountPath: /var/lib/kubelet/device-plugins
+        - name: coffee
+          mountPath: /dev
       volumes:
       - name: device-plugin
         hostPath:
           path: /var/lib/kubelet/device-plugins
+      - name: coffee
+        hostPath:
+          path: /dev
       tolerations:
       - key: "CriticalAddonsOnly"
         operator: "Exists"
